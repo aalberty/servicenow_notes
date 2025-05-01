@@ -1,13 +1,15 @@
 # Transform Scripts
 
 ## Types
-**onStart**: executes at the start of an import before any rows are read
-**onAfter**: executes at the end of a row transformation and after the source row has been transformed into the target row and saved
-**onBefore**: executes at the start of a row transformation and before the row is transformed into the target row
-**onChoiceCreate**: executes at the start of a choice value creation before the new choice value is created
-**onComplete**: executes at the end of an import after all rows are read and transformed
-**onForeignInsert**: executes at the start of the creation of a related, referenced record before the record is created
-**onReject**: executes during foreign record or choice creation if the foreign record or choice is rejected; The entire transformation row is not saved
+| Script Type        | Description                                                                                              |
+|--------------------|----------------------------------------------------------------------------------------------------------|
+| onStart        | Executes at the start of an import before any rows are read                                              |
+| onAfter        | Executes at the end of a row transformation and after the source row has been transformed and saved      |
+| onBefore       | Executes at the start of a row transformation and before the row is transformed into the target row      |
+| onChoiceCreate | Executes at the start of a choice value creation before the new choice value is created                  |
+| onComplete     | Executes at the end of an import after all rows are read and transformed                                 |
+| onForeignInsert| Executes at the start of the creation of a related, referenced record before the record is created       |
+| onReject       | Executes during foreign record or choice creation if the foreign record or choice is rejected; the entire transformation row is not saved |
 
 source: https://developer.servicenow.com/dev.do#!/learn/courses/xanadu/app_store_learnv2_importingdata_xanadu_importing_data_into_servicenow/app_store_learnv2_importingdata_xanadu_importing_data/app_store_learnv2_importingdata_xanadu_transform_event_scripts
 
