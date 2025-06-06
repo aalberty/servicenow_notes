@@ -1,0 +1,33 @@
+<h2>ServiceNow OAuth Form</h2>
+
+<label for="oauth_url">Instance OAuth URL:</label>
+<input type="text" id="oauth_url" size="60" value="https://<instance>.service-now.com/oauth_auth.do" onchange="document.getElementById('form1').setAttribute('action', document.getElementById('oauth_url').value)"/>
+
+<form action="" method="POST" enctype="application/x-www-form-urlencoded" id="form1">
+
+  <table border="0">
+      <tr>
+          <td>client_id:</td>
+          <td><input type="text" size="60" name="client_id" value="" ></td>
+      </tr>
+      <tr>
+          <td>redirect_uri:</td>
+          <td><input type="text" size="60" name="redirect_uri" value="" ></td>
+      </tr>
+      <tr>
+          <td>response_type:</td>
+          <td><input type="text" size="10" name="response_type" value="code" ></td>
+      </tr>
+
+      <tr>
+          <td>&nbsp;</td>
+          <td><br />
+          <input type="submit" value="Submit OAuth Request"> 
+          </td>
+
+      </tr>
+  </table>
+
+</form>
+
+
