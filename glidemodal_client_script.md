@@ -14,7 +14,7 @@ function onLoad() {
         // GlideModal for legacy fulfiller view
         var header = "Descriptive Modal Header";
         if (!isSOW) {
-            var dialog = new GlideModal("<name_of_ui_page_to_display>");
+            var dialog = new GlideModal("<endpoint_of_ui_page_to_display_without_.do>");
             dialog.setTitle(header);
             dialog.render();
         } else {
@@ -71,4 +71,5 @@ function invokePromptCallBack(type) {
 	}
 }
 ```
+
 
